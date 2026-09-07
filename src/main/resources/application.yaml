@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: hello-world-service
+  cloud:
+    nacos:
+      discovery:
+        server-addr: ${NACOS_SERVER_ADDR:122.51.120.198:8848}
+        # 留空使用 public；自定义命名空间请填写 ID，而非显示名称。
+        namespace: ${NACOS_NAMESPACE:}
+        group: ${NACOS_GROUP:DEFAULT_GROUP}
+        username: nacos
+        password: "OqpnszO8S9RQ"
+
+server:
+  port: ${SERVER_PORT:8083}
