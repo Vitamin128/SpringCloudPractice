@@ -1,6 +1,6 @@
 spring:
   application:
-    name: hello-world-service
+    name: hello-world-consumer
   cloud:
     nacos:
       discovery:
